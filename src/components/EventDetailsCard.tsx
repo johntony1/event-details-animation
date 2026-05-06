@@ -765,8 +765,8 @@ export function EventDetailsCard() {
             transition={{ ...mountSpring, delay: T.descLabel }}
             className="flex items-center gap-2"
           >
-            <Icon icon="mingcute:list-check-3-line" width={20} height={20} className="text-[#A4A4A4] shrink-0" />
-            <span className={labelCls}>Description</span>
+            <Icon icon="mingcute:list-check-3-line" width={20} height={20} className="text-[#A4A4A4] shrink-0 relative top-[1px]" />
+            <span className={`${labelCls} leading-none`}>Description</span>
           </motion.div>
 
           <motion.div
