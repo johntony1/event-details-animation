@@ -758,15 +758,15 @@ export function EventDetailsCard() {
         <TimeRow delay={T.row3} />
 
         {/* Description */}
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col">
           <motion.div
             initial={{ opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ...mountSpring, delay: T.descLabel }}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 py-2"
           >
-            <Icon icon="mingcute:list-check-3-line" width={20} height={20} className="text-[#A4A4A4] shrink-0 relative top-[1px]" />
-            <span className={`${labelCls} leading-none`}>Description</span>
+            <Icon icon="mingcute:list-check-3-line" width={20} height={20} className="text-[#A4A4A4] shrink-0 relative top-[1px] left-[1px]" />
+            <span className={labelCls}>Description</span>
           </motion.div>
 
           <motion.div
